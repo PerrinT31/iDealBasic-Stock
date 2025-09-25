@@ -1,1 +1,40 @@
+# .github/workflows/update-reappro.yml
+name: Mise à jour quotidienne du CSV de réappro iDeal Basic
+
+on:
+  schedule:
+    # Tous les jours à 02h00 UTC
+    - cron: '0 2 * * *'
+  workflow_dispatch:          # permet aussi un lancement manuel
+
+jobs:
+  update-reappro:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1) Récupérer le dépôt avec persistance du token pour le push
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: true
+
+      # 2) Télécharger le CSV de réappro iDeal Basic
+      - name: Télécharger le CSV de réappro
+        run: |
+          curl -fsSL "https://files.karibanbrands.com/documents/IDEALBASIC_REAPPROWEB.csv" \
+            -o public/IDEALBASIC_REAPPROWEB.csv
+          # ⚠️ Remplacer l’URL par la vraie quand tu me la donnes
+
+      # 3) Commit & push uniquement si le CSV a changé
+      - name: Commit & push si modifié
+        run: |
+          git config user.name  "${{ github.actor }}"
+          git config user.email "${{ github.actor }}@users.noreply.github.com"
+          git add public/IDEALBASIC_REAPPROWEB.csv
+          if git diff --cached --quiet; then
+            echo "Aucun changement détecté – pas de commit."
+          else
+            git commit -m "Mise à jour quotidienne du CSV de réappro iDeal Basic"
+            git push
+          fi
 
