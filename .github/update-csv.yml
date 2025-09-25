@@ -1,1 +1,49 @@
+# .github/workflows/update-stock-csv.yml
+name: Mise à jour quotidienne du CSV Stock Web iDeal Basic
+
+on:
+  schedule:
+    - cron: '10 8 * * *'      # chaque jour à 08h10 UTC
+  workflow_dispatch:          # permet aussi un lancement manuel
+
+jobs:
+  update-stock-csv:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1) Récupérer le dépôt et tout l’historique
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: true
+          fetch-depth: 0
+
+      # 2) Mettre la branche locale exactement à l’état distant
+      - name: Reset local → remote
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+
+      # 3) Télécharger le nouveau CSV iDeal Basic
+      - name: Télécharger le CSV IDEALBASIC_STOCKWEB.csv
+        run: |
+          curl -fsSL "https://files.karibanbrands.com/documents/IDEALBASIC_STOCKWEB.csv" \
+            -o public/IDEALBASIC_STOCKWEB.csv
+          # ⚠️ Remplacer l’URL par la vraie quand tu me la donnes
+
+      # 4) Commit & push si le CSV a changé
+      - name: Commit & push si modifié
+        run: |
+          git config user.name  "${{ github.actor }}"
+          git config user.email "${{ github.actor }}@users.noreply.github.com"
+
+          git add public/IDEALBASIC_STOCKWEB.csv
+
+          if git diff --cached --quiet; then
+            echo "Aucun changement détecté – pas de commit ni push."
+            exit 0
+          fi
+
+          git commit -m "Mise à jour quotidienne du CSV Stock Web iDeal Basic"
+          git push origin main
 
