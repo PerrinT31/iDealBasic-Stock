@@ -88,7 +88,7 @@ export default function App() {
       {/* En-tête */}
       <header className="app-header">
         <img
-          src="/IDEAL_BASIC_LOGO.png"
+          src="/IDEAL%20BASIC%20BRAND_LOGO_PRINCIPAL.jpg"
           alt="iDeal Basic Logo"
           className="app-logo"
         />
