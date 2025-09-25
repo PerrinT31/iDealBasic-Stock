@@ -1,1 +1,119 @@
+/* index.css */
+
+/* 1. Reset & fond global */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+  background: #f5f5f5; /* Fond clair neutre, plus moderne que beige */
+  font-family: "Jost", sans-serif;
+  color: #000;
+}
+
+/* 2. Conteneur principal */
+.app-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+/* 3. En‐tête : logo au-dessus du titre */
+.app-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+.app-logo {
+  height: 90px;
+  width: auto;
+}
+.app-title {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #000;
+}
+
+/* 4. Filtres côte-à-côte */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.filter {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.filter label {
+  margin-bottom: 0.3rem;
+  font-weight: 700;
+  font-size: 14px;
+  color: #333;
+}
+.filter select {
+  padding: 0.6rem;
+  font-size: 16px;
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #fff;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+.filter select:focus {
+  border-color: #0077b6; /* Accent inspiré du Ocean Royal Blue */
+  box-shadow: 0 0 0 2px rgba(0,119,182,0.15);
+  outline: none;
+}
+
+/* 5. Tableau des résultats */
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.results-table th,
+.results-table td {
+  padding: 0.75rem;
+  border: 1px solid #e0e0e0;
+  font-size: 15px;
+}
+.results-table th {
+  background: #eaeaea;
+  font-weight: 700;
+  text-align: left;
+}
+.results-table tr:nth-child(even) {
+  background: #fafafa; /* alternance pour lisibilité */
+}
+.results-table td.right {
+  text-align: right;
+}
+.results-table td.center {
+  text-align: center;
+}
+
+/* 6. Espace entre le tableau et le visuel */
+.spacer {
+  height: 2rem;
+}
+
+/* 7. Visuel sous le tableau */
+.hero-image img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+}
 
