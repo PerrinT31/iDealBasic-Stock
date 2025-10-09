@@ -1,8 +1,7 @@
 // reapproCsvApi.js
 
 // URL du CSV de réappro placé dans public/
-const REAPPRO_CSV_URL = "/IDEALBASIC_REAPPROWEB.csv"; 
-// 👉 à remplacer par le vrai nom du fichier dès que tu me le transmets
+const REAPPRO_CSV_URL = "/IDEAL_BASIC_BRANDS_REAPPROWEB_IBB.csv"; 
 
 let cache = null;
 
