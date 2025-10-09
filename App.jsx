@@ -83,87 +83,37 @@ export default function App() {
     });
   }, [selectedRef, selectedColor]);
 
+ // ...imports inchangés
+
+export default function App() {
+  // ...state & effects inchangés
+
   return (
     <div className="app-container">
       {/* En-tête */}
       <header className="app-header">
         <img
-          src="/IDEAL%20BASIC%20BRAND_LOGO_PRINCIPAL.jpg"
+          src="/IDEAL_BASIC_BRAND_LOGO_PRINCIPAL.jpg"
           alt="iDeal Basic Logo"
           className="app-logo"
+          onError={(e) => { e.currentTarget.style.display = "none"; }}
         />
-        <h1 className="app-title">iDeal Basic – Stock Checker</h1>
+        <h1 className="app-title">STOCK CHECKER</h1>
       </header>
 
-      {/* Filtres */}
-      <div className="filters">
-        <div className="filter">
-          <label>Reference</label>
-          <select
-            value={selectedRef}
-            onChange={e => setSelectedRef(e.target.value)}
-          >
-            <option value="">-- Select reference --</option>
-            {refs.map(r => (
-              <option key={r} value={r}>{r}</option>
-            ))}
-          </select>
-        </div>
-        <div className="filter">
-          <label>Color</label>
-          <select
-            value={selectedColor}
-            onChange={e => setSelectedColor(e.target.value)}
-            disabled={!colors.length}
-          >
-            <option value="">-- Select color --</option>
-            {colors.map(c => (
-              <option key={c} value={c}>{c}</option>
-            ))}
-          </select>
-        </div>
-      </div>
-
-      {/* Tableau des résultats */}
-      {sizes.length > 0 && (
-        <table className="results-table">
-          <thead>
-            <tr>
-              <th>Size</th>
-              <th>Stock</th>
-              <th>Replenishment (Date)</th>
-              <th>Qty Incoming</th>
-            </tr>
-          </thead>
-          <tbody>
-            {sizes.map(size => (
-              <tr key={size}>
-                <td>{size}</td>
-                <td className="right">
-                  {stockBySize[size] > 0
-                    ? stockBySize[size]
-                    : "Out of stock"}
-                </td>
-                <td className="center">
-                  {reapproBySize[size]?.dateToRec ?? "-"}
-                </td>
-                <td className="right">
-                  {reapproBySize[size]?.quantity ?? "-"}
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      )}
+      {/* Filtres ... (inchangé) */}
 
       {/* Espace avant le visuel */}
       <div className="spacer" />
 
       {/* Visuel sous le tableau */}
       <div className="hero-image">
-        <img src="/ideal-basic-collection.jpg" alt="iDeal Basic Collection" />
+        <img
+          src="/IB310-IB311_2026.jpg"
+          alt="iDeal Basic Collection"
+          onError={(e) => { e.currentTarget.style.display = "none"; }}
+        />
       </div>
     </div>
   );
 }
-
