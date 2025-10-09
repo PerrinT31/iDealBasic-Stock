@@ -93,18 +93,12 @@ body {
 .results-table td.right { text-align: right; }
 .results-table td.center { text-align: center; }
 
-/* 6. Espacement avant visuel (agrandi pour éviter tout recouvrement) */
-.spacer { height: 2.5rem; }
-
-/* 7. Visuel bas de page */
-.hero-image {
-  margin-top: 1rem;
-  position: relative;
-  z-index: 0; /* sous le tableau/les filtres */
+/* 6. Espacement final allégé */
+.spacer {
+  height: 1.5rem;
 }
-.hero-image img {
-  width: 100%;
-  border-radius: 12px;
-  display: block;
-  box-shadow: 0 8px 20px rgba(0,0,0,.18);
+
+/* Supprime complètement le visuel */
+.hero-image {
+  display: none;
 }
