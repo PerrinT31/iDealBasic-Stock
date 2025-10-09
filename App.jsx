@@ -86,15 +86,20 @@ export default function App() {
   return (
     <div className="app-container">
       {/* En-tête */}
-      <header className="app-header">
-        <img
-          src="/IDEAL_BASIC_BRAND_LOGO_PRINCIPAL.jpg"
-          alt="iDeal Basic Logo"
-          className="app-logo"
-          onError={(e) => { e.currentTarget.style.display = "none"; }}
-        />
-        <h1 className="app-title">STOCK CHECKER</h1>
-      </header>
+     <header className="app-header" aria-label="iDeal Basic – Stock Checker">
+  <img
+    src="/IDEAL%20BASIC%20BRAND%20LOGOTYPE%20PRINCIPAL%20OFF%20WHITE%20RVB%20900PX%20W%2072PPI.png"
+    alt="iDeal Basic Brand"
+    className="app-logo"
+    width="240"
+    height="70"
+    loading="eager"
+    decoding="async"
+    fetchPriority="high"
+    onError={(e) => { e.currentTarget.style.display = "none"; }}
+  />
+  <h1 className="app-title">Stock Checker</h1>
+</header>
 
       {/* Filtres ... (inchangé) */}
 
@@ -104,9 +109,14 @@ export default function App() {
       {/* Visuel sous le tableau */}
       <div className="hero-image">
         <img
-          src="/IB310-IB311_2026.jpg"
-          alt="iDeal Basic Collection"
-          onError={(e) => { e.currentTarget.style.display = "none"; }}
+           src="/IB310-IB311_2026.jpg"
+    alt="iDeal Basic – Collection"
+    width="1200"
+    height="600"
+    loading="lazy"
+    decoding="async"
+    sizes="(max-width: 980px) 100vw, 980px"
+    onError={(e) => { e.currentTarget.style.display = "none"; }}
         />
       </div>
     </div>
