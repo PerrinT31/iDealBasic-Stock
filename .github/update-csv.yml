@@ -25,10 +25,10 @@ jobs:
           git reset --hard origin/main
 
       # 3) Télécharger le nouveau CSV iDeal Basic
-      - name: Télécharger le CSV IDEALBASIC_STOCKWEB.csv
+      - name: Télécharger le CSV IDEAL_BASIC_BRANDS_STOCKWEB_IBB
         run: |
-          curl -fsSL "https://files.karibanbrands.com/documents/IDEALBASIC_STOCKWEB.csv" \
-            -o public/IDEALBASIC_STOCKWEB.csv
+          curl -fsSL "https://files.karibanbrands.com/documents/IDEAL_BASIC_BRANDS_STOCKWEB_IBB.csv" \
+            -o public/IDEAL_BASIC_BRANDS_STOCKWEB_IBB.csv
           # ⚠️ Remplacer l’URL par la vraie quand tu me la donnes
 
       # 4) Commit & push si le CSV a changé
@@ -37,7 +37,7 @@ jobs:
           git config user.name  "${{ github.actor }}"
           git config user.email "${{ github.actor }}@users.noreply.github.com"
 
-          git add public/IDEALBASIC_STOCKWEB.csv
+          git add public/IDEAL_BASIC_BRANDS_STOCKWEB_IBB.csv
 
           if git diff --cached --quiet; then
             echo "Aucun changement détecté – pas de commit ni push."
