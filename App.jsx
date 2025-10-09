@@ -103,6 +103,67 @@ export default function App() {
 
       {/* Filtres ... (inchangé) */}
 
+      {/* Filtres */}
+<div className="filters">
+  <div className="filter">
+    <label>Reference</label>
+    <select
+      value={selectedRef}
+      onChange={e => setSelectedRef(e.target.value)}
+    >
+      <option value="">-- Select reference --</option>
+      {refs.map(r => (
+        <option key={r} value={r}>{r}</option>
+      ))}
+    </select>
+  </div>
+
+  <div className="filter">
+    <label>Color</label>
+    <select
+      value={selectedColor}
+      onChange={e => setSelectedColor(e.target.value)}
+      disabled={!colors.length}
+    >
+      <option value="">-- Select color --</option>
+      {colors.map(c => (
+        <option key={c} value={c}>{c}</option>
+      ))}
+    </select>
+  </div>
+</div>
+
+{/* Tableau */}
+{sizes.length > 0 ? (
+  <table className="results-table">
+    <thead>
+      <tr>
+        <th>Size</th>
+        <th>Stock</th>
+        <th>Replenishment (Date)</th>
+        <th>Qty Incoming</th>
+      </tr>
+    </thead>
+    <tbody>
+      {sizes.map(size => (
+        <tr key={size}>
+          <td>{size}</td>
+          <td className="right">
+            {stockBySize[size] > 0 ? stockBySize[size] : "Out of stock"}
+          </td>
+          <td className="center">
+            {reapproBySize[size]?.dateToRec ?? "-"}
+          </td>
+          <td className="right">
+            {reapproBySize[size]?.quantity ?? "-"}
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+) : (
+  <div className="spacer" />
+)}
     </div>
   );
 }
