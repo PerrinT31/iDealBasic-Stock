@@ -27,8 +27,8 @@ jobs:
       # 3) Télécharger le nouveau CSV
       - name: Télécharger le CSV SPASSO_STOCKWEB_SP.csv
         run: |
-          curl -fsSL "https://files.karibanbrands.com/documents/SPASSO_STOCKWEB_SP.csv" \
-            -o public/SPASSO_STOCKWEB_SP.csv
+          curl -fsSL "https://files.karibanbrands.com/documents/IDEAL_BASIC_BRANDS_STOCKWEB_IBB.csv" \
+            -o public/IDEAL_BASIC_BRANDS_STOCKWEB_IBB.csv
 
       # 4) Commit & push si le CSV a changé
       - name: Commit & push si modifié
@@ -36,7 +36,7 @@ jobs:
           git config user.name  "${{ github.actor }}"
           git config user.email "${{ github.actor }}@users.noreply.github.com"
 
-          git add public/IDEAL_BASIC_BRAND_STOCKWEB_IBB.csv
+          git add public/IDEAL_BASIC_BRANDS_STOCKWEB_IBB.csv
 
           if git diff --cached --quiet; then
             echo "Aucun changement détecté – pas de commit ni push."
