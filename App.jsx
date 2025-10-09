@@ -83,11 +83,6 @@ export default function App() {
     });
   }, [selectedRef, selectedColor]);
 
- // ...imports inchangés
-
-export default function App() {
-  // ...state & effects inchangés
-
   return (
     <div className="app-container">
       {/* En-tête */}
