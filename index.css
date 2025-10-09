@@ -1,119 +1,110 @@
-/* index.css */
-
-/* 1. Reset & fond global */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-html, body {
-  height: 100%;
-  background: #f5f5f5; /* Fond clair neutre, plus moderne que beige */
-  font-family: "Jost", sans-serif;
-  color: #000;
+/* 1. Reset & global */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; }
+html { scroll-behavior: smooth; }
+body {
+  background: #4D63A8; /* Amparo Blue */
+  font-family: "Roboto Condensed", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: #111;
 }
 
-/* 2. Conteneur principal */
+/* 2. Conteneur */
 .app-container {
-  max-width: 900px;
+  max-width: 980px;
   margin: 0 auto;
-  padding: 1.5rem;
+  padding: 1.5rem 1rem 3rem;
+  position: relative;
+  z-index: 0;
 }
 
-/* 3. En‐tête : logo au-dessus du titre */
+/* 3. Header */
 .app-header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.75rem;
-  margin-bottom: 2rem;
+  gap: .5rem;
+  margin-bottom: 1.25rem;
 }
 .app-logo {
-  height: 90px;
+  height: 70px;
   width: auto;
 }
 .app-title {
-  font-family: "Montserrat Alternates", sans-serif;
   font-weight: 700;
-  font-size: 42px;
+  font-size: 28px;
+  letter-spacing: 1px;
+  color: #fff; /* lisible sur fond bleu */
   text-transform: uppercase;
-  letter-spacing: 1.5px;
-  color: #000;
 }
 
-/* 4. Filtres côte-à-côte */
+/* 4. Filtres */
 .filters {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-bottom: 1.5rem;
+  margin: 1rem 0 1.25rem;
+  position: relative;
+  z-index: 1; /* au-dessus du visuel si besoin */
 }
 .filter {
-  flex: 1;
+  flex: 1 1 320px;
   display: flex;
   flex-direction: column;
 }
 .filter label {
-  margin-bottom: 0.3rem;
+  margin-bottom: .35rem;
   font-weight: 700;
-  font-size: 14px;
-  color: #333;
+  color: #eef2ff; /* labels clairs */
 }
 .filter select {
-  padding: 0.6rem;
+  padding: .6rem .7rem;
   font-size: 16px;
-  font-family: "Jost", sans-serif;
   font-weight: 600;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  background: #fff;
-  transition: border 0.2s, box-shadow 0.2s;
-}
-.filter select:focus {
-  border-color: #0077b6; /* Accent inspiré du Ocean Royal Blue */
-  box-shadow: 0 0 0 2px rgba(0,119,182,0.15);
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,.35);
+  background: #ffffff;
+  color: #111;
   outline: none;
 }
 
-/* 5. Tableau des résultats */
+/* 5. Tableau */
 .results-table {
   width: 100%;
   border-collapse: collapse;
   background: #fff;
-  border-radius: 6px;
+  border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 10px 24px rgba(0,0,0,.15);
+  position: relative;
+  z-index: 1; /* le tableau reste au-dessus */
 }
 .results-table th,
 .results-table td {
-  padding: 0.75rem;
-  border: 1px solid #e0e0e0;
+  padding: .75rem .9rem;
+  border: 1px solid #e8e8e8;
   font-size: 15px;
 }
 .results-table th {
-  background: #eaeaea;
+  background: #eef2ff; /* entête claire */
   font-weight: 700;
   text-align: left;
 }
-.results-table tr:nth-child(even) {
-  background: #fafafa; /* alternance pour lisibilité */
-}
-.results-table td.right {
-  text-align: right;
-}
-.results-table td.center {
-  text-align: center;
-}
+.results-table tr:nth-child(even) { background: #fafbff; }
+.results-table td.right { text-align: right; }
+.results-table td.center { text-align: center; }
 
-/* 6. Espace entre le tableau et le visuel */
-.spacer {
-  height: 2rem;
-}
+/* 6. Espacement avant visuel (agrandi pour éviter tout recouvrement) */
+.spacer { height: 2.5rem; }
 
-/* 7. Visuel sous le tableau */
+/* 7. Visuel bas de page */
+.hero-image {
+  margin-top: 1rem;
+  position: relative;
+  z-index: 0; /* sous le tableau/les filtres */
+}
 .hero-image img {
   width: 100%;
-  border-radius: 6px;
-  margin-bottom: 1.5rem;
+  border-radius: 12px;
+  display: block;
+  box-shadow: 0 8px 20px rgba(0,0,0,.18);
 }
-
