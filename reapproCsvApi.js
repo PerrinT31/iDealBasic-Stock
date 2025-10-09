@@ -1,17 +1,19 @@
 // reapproCsvApi.js
-// Robuste aux variations : IB220A/AX → IB220 ; 2XL ↔︎ XXL ; couleurs normalisées (sans accents/espaces)
+// Compatible avec les entêtes : "DATE TO RECEIVE", "QUANTITY", etc.
 const REAPPRO_CSV_URL = "/IDEAL_BASIC_BRANDS_REAPPROWEB_IBB.csv";
 
 let _cache = null;
 
 // ---------- Normalisations ----------
 const norm = (s) => (s ?? "").trim();
+
+// IB220A/AX -> IB220
 const toBaseRef = (ref) => {
   const m = String(ref).trim().match(/^([A-Za-z]+[0-9]+)/);
   return m ? m[1] : String(ref).trim();
 };
 
-// remplace accents, passe lower, enlève tout ce qui n’est pas alphanumérique
+// couleur -> clé normalisée (sans accents/espaces)
 const toColorKey = (s) =>
   norm(s)
     .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
@@ -19,25 +21,29 @@ const toColorKey = (s) =>
     .replace(/[^a-z0-9]/g, "");
 
 const SIZE_ALIASES = new Map([
-  ["2XS", "XXS"],
-  ["XXS", "XXS"],
-  ["XS", "XS"],
-  ["S", "S"],
-  ["M", "M"],
-  ["L", "L"],
-  ["XL", "XL"],
-  ["2XL", "XXL"],
-  ["XXL", "XXL"],
-  ["3XL", "3XL"],
-  ["4XL", "4XL"],
-  ["5XL", "5XL"],
-  ["6XL", "6XL"],
+  ["2XS", "XXS"], ["XXS", "XXS"],
+  ["XS", "XS"], ["S", "S"], ["M", "M"], ["L", "L"], ["XL", "XL"],
+  ["2XL", "XXL"], ["XXL", "XXL"], ["3XL", "3XL"], ["4XL", "4XL"],
+  ["5XL", "5XL"], ["6XL", "6XL"],
 ]);
 
 const normSize = (s) => {
   const up = norm(s).toUpperCase().replace(/\s+/g, "");
-  return SIZE_ALIASES.get(up) || up; // si inconnu, on garde la valeur normalisée
+  return SIZE_ALIASES.get(up) || up;
 };
+
+// ---------- Helpers d’entêtes ----------
+function findCol(header, testers) {
+  // Cherche une colonne en testant une série de prédicats (regex/contains)
+  for (let i = 0; i < header.length; i++) {
+    const h = header[i];
+    if (testers.some((t) => t(h))) return i;
+  }
+  return -1;
+}
+const contains = (needle) => (h) => h.includes(needle);
+const equals = (needle) => (h) => h === needle;
+const regex = (re) => (h) => re.test(h);
 
 // ---------- Chargement CSV ----------
 async function loadReappro() {
@@ -50,14 +56,40 @@ async function loadReappro() {
   const lines = text.split(/\r?\n/).map(l => l.trim()).filter(Boolean);
   if (!lines.length) return [];
 
-  const header = lines[0].split(";").map(h => h.trim().toLowerCase());
+  // Header en minuscules sans espaces multiples
+  const header = lines[0]
+    .split(";")
+    .map(h => h.trim().toLowerCase().replace(/\s+/g, " "));
+
+  // Détection des colonnes avec tolérance
   const idx = {
-    ref: header.findIndex(h => ["ref","reference","référence"].includes(h)),
-    color: header.findIndex(h => ["color","colour","couleur"].includes(h)),
-    size: header.findIndex(h => ["size","taille"].includes(h)),
-    date: header.findIndex(h => ["date","datetorec","date_to_rec","replenishment","réassort"].includes(h)),
-    qty:  header.findIndex(h => ["quantity","qty","quantité"].includes(h)),
+    ref:  findCol(header, [
+            equals("ref"), equals("reference"), equals("référence"),
+            contains("ref")
+          ]),
+    color:findCol(header, [
+            equals("color"), equals("colour"), equals("couleur"),
+            contains("color")
+          ]),
+    size: findCol(header, [
+            equals("size"), equals("taille"), contains("size")
+          ]),
+    date: findCol(header, [
+            equals("date to receive"),
+            equals("date_to_receive"),
+            equals("datetorec"),
+            contains("date to receive"),
+            contains("date_to_receive"),
+            contains("datetorec"),
+            // fallback générique : un header qui contient "date" + ("receive" ou "rec")
+            (h) => h.includes("date") && (h.includes("receive") || h.includes("rec")),
+          ]),
+    qty:  findCol(header, [
+            equals("quantity"), equals("qty"), equals("quantité"),
+            contains("quantity"), contains("qty"), contains("quantit")
+          ]),
   };
+
   const noHeader = Object.values(idx).some(i => i === -1);
   const body = noHeader ? lines : lines.slice(1);
 
@@ -89,7 +121,6 @@ export async function getReappro(ref, color, size) {
   );
 
   if (!matches.length) {
-    // Décommenter en dev si tu veux tracer les manqués :
     // console.warn("[reappro] no match for", { baseRef, color, colorKey, size, sizeKey });
     return null;
   }
