@@ -103,22 +103,6 @@ export default function App() {
 
       {/* Filtres ... (inchangé) */}
 
-      {/* Espace avant le visuel */}
-      <div className="spacer" />
-
-      {/* Visuel sous le tableau */}
-      <div className="hero-image">
-        <img
-           src="/IB310-IB311_2026.jpg"
-    alt="iDeal Basic – Collection"
-    width="1200"
-    height="600"
-    loading="lazy"
-    decoding="async"
-    sizes="(max-width: 980px) 100vw, 980px"
-    onError={(e) => { e.currentTarget.style.display = "none"; }}
-        />
-      </div>
     </div>
   );
 }
