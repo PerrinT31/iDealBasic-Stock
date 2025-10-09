@@ -25,7 +25,7 @@ jobs:
           git reset --hard origin/main
 
       # 3) Télécharger le nouveau CSV
-      - name: Télécharger le CSV SPASSO_STOCKWEB_SP.csv
+      - name: Télécharger le CSV IDEAL_BASIC_BRANDS_STOCKWEB_IBB.csv
         run: |
           curl -fsSL "https://files.karibanbrands.com/documents/IDEAL_BASIC_BRANDS_STOCKWEB_IBB.csv" \
             -o public/IDEAL_BASIC_BRANDS_STOCKWEB_IBB.csv
