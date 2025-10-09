@@ -1,5 +1,5 @@
 # .github/workflows/update-stock-csv.yml
-name: Mise à jour quotidienne du CSV Stock Web IBB
+name: Mise à jour quotidienne du CSV REAPRO Web IBB
 
 on:
   schedule:
@@ -25,10 +25,10 @@ jobs:
           git reset --hard origin/main
 
       # 3) Télécharger le nouveau CSV
-      - name: Télécharger le CSV IDEAL_BASIC_BRANDS_STOCKWEB_IBB.csv
+      - name: Télécharger le CSV IDEAL_BASIC_BRANDS_REAPPROWEB_IBB.csv
         run: |
-          curl -fsSL "https://files.karibanbrands.com/documents/IDEAL_BASIC_BRANDS_STOCKWEB_IBB.csv" \
-            -o public/IDEAL_BASIC_BRANDS_STOCKWEB_IBB.csv
+          curl -fsSL "https://files.karibanbrands.com/documents/IDEAL_BASIC_BRANDS_REAPPROWEB_IBB.csv" \
+            -o public/IDEAL_BASIC_BRANDS_REAPPROWEB_IBB.csv
 
       # 4) Commit & push si le CSV a changé
       - name: Commit & push si modifié
@@ -36,7 +36,7 @@ jobs:
           git config user.name  "${{ github.actor }}"
           git config user.email "${{ github.actor }}@users.noreply.github.com"
 
-          git add public/IDEAL_BASIC_BRANDS_STOCKWEB_IBB.csv
+          git add public/IDEAL_BASIC_BRANDS_REAPPROWEB_IBB.csv
 
           if git diff --cached --quiet; then
             echo "Aucun changement détecté – pas de commit ni push."
