@@ -1,5 +1,4 @@
 // stockCsvApi.js
-// 👉 Chargement du fichier CSV de stock (placé dans /public)
 const STOCK_CSV_URL = "/IDEAL_BASIC_BRANDS_STOCKWEB_IBB.csv";
 
 let _cacheRows = null;
@@ -11,7 +10,6 @@ let _index = {
 
 const SIZE_ORDER = ["XS","S","M","L","XL","XXL","3XL","4XL","5XL","6XL"];
 
-// -- Helpers -------------------------------------------------------------
 const norm = (s) => (s ?? "").trim();
 const normColor = (s) => norm(s).replace(/\s+/g, " ");
 const normSize = (s) => norm(s).toUpperCase();
@@ -19,23 +17,20 @@ const toInt = (v) => {
   const n = parseInt(String(v).replace(/\s/g, ""), 10);
   return Number.isFinite(n) ? n : 0;
 };
-
 const sortSizes = (arr) => {
   const order = new Map(SIZE_ORDER.map((v, i) => [v, i]));
-  return [...new Set(arr)]
-    .sort((a, b) => {
-      const aa = order.has(a) ? order.get(a) : 999;
-      const bb = order.has(b) ? order.get(b) : 999;
-      return aa === bb ? a.localeCompare(b) : aa - bb;
-    });
+  return [...new Set(arr)].sort((a, b) => {
+    const aa = order.has(a) ? order.get(a) : 999;
+    const bb = order.has(b) ? order.get(b) : 999;
+    return aa === bb ? a.localeCompare(b) : aa - bb;
+  });
 };
 
-// -- Chargement et indexation du CSV -------------------------------------
 async function loadStock() {
   if (_cacheRows) return _cacheRows;
 
   const res = await fetch(STOCK_CSV_URL);
-  if (!res.ok) throw new Error(`❌ Impossible de charger le CSV de stock : ${STOCK_CSV_URL}`);
+  if (!res.ok) throw new Error(`Stock CSV not found: ${STOCK_CSV_URL}`);
   const text = await res.text();
 
   const lines = text.split(/\r?\n/).map(l => l.trim()).filter(Boolean);
@@ -77,26 +72,27 @@ async function loadStock() {
   return rows;
 }
 
-// -- Fonctions exportées -------------------------------------------------
-export async function getUniqueRefs() {
+async function getUniqueRefs() {
   await loadStock();
   return [..._index.byRef.keys()].sort();
 }
 
-export async function getColorsFor(ref) {
+async function getColorsFor(ref) {
   await loadStock();
   const set = _index.byRef.get(ref) ?? new Set();
   return [...set].sort((a,b) => a.localeCompare(b));
 }
 
-export async function getSizesFor(ref, color) {
+async function getSizesFor(ref, color) {
   await loadStock();
   const set = _index.byRefColor.get(`${ref}::${color}`) ?? new Set();
   return sortSizes([...set]);
 }
 
-export async function getStock(ref, color, size) {
+async function getStock(ref, color, size) {
   await loadStock();
   return _index.stockByKey.get(`${ref}::${color}::${size}`) ?? 0;
 }
 
+// 🔁 Export NOMS EXPLICITES pour Rollup/Vite
+export { getUniqueRefs, getColorsFor, getSizesFor, getStock };
