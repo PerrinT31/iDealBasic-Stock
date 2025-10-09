@@ -1,17 +1,45 @@
 // reapproCsvApi.js
-// Regroupe aussi les variantes (IB220A, IB220AX, …) sous IB220 pour la recherche.
+// Robuste aux variations : IB220A/AX → IB220 ; 2XL ↔︎ XXL ; couleurs normalisées (sans accents/espaces)
 const REAPPRO_CSV_URL = "/IDEAL_BASIC_BRANDS_REAPPROWEB_IBB.csv";
 
 let _cache = null;
 
+// ---------- Normalisations ----------
 const norm = (s) => (s ?? "").trim();
-const normColor = (s) => norm(s).replace(/\s+/g, " ");
-const normSize = (s) => norm(s).toUpperCase();
 const toBaseRef = (ref) => {
   const m = String(ref).trim().match(/^([A-Za-z]+[0-9]+)/);
   return m ? m[1] : String(ref).trim();
 };
 
+// remplace accents, passe lower, enlève tout ce qui n’est pas alphanumérique
+const toColorKey = (s) =>
+  norm(s)
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]/g, "");
+
+const SIZE_ALIASES = new Map([
+  ["2XS", "XXS"],
+  ["XXS", "XXS"],
+  ["XS", "XS"],
+  ["S", "S"],
+  ["M", "M"],
+  ["L", "L"],
+  ["XL", "XL"],
+  ["2XL", "XXL"],
+  ["XXL", "XXL"],
+  ["3XL", "3XL"],
+  ["4XL", "4XL"],
+  ["5XL", "5XL"],
+  ["6XL", "6XL"],
+]);
+
+const normSize = (s) => {
+  const up = norm(s).toUpperCase().replace(/\s+/g, "");
+  return SIZE_ALIASES.get(up) || up; // si inconnu, on garde la valeur normalisée
+};
+
+// ---------- Chargement CSV ----------
 async function loadReappro() {
   if (_cache) return _cache;
 
@@ -36,27 +64,39 @@ async function loadReappro() {
   _cache = body.map(line => {
     const p = line.split(";");
     const baseRef   = toBaseRef(norm(p[noHeader ? 0 : idx.ref]));
-    const color     = normColor(p[noHeader ? 1 : idx.color]);
+    const color     = norm(p[noHeader ? 1 : idx.color]);
+    const colorKey  = toColorKey(color);
     const size      = normSize(p[noHeader ? 2 : idx.size]);
     const dateToRec = norm(p[noHeader ? 3 : idx.date]) || "-";
     const quantity  = parseInt((p[noHeader ? 4 : idx.qty]) ?? "", 10) || 0;
-    return { baseRef, color, size, dateToRec, quantity };
-  }).filter(r => r.baseRef && r.color && r.size);
+    return { baseRef, color, colorKey, size, dateToRec, quantity };
+  }).filter(r => r.baseRef && r.colorKey && r.size);
 
   return _cache;
 }
 
-/** Renvoie { dateToRec, quantity } ou null pour la baseRef + color + size */
+/** Renvoie { dateToRec, quantity } ou null pour baseRef+color+size (tolérant aux variantes) */
 export async function getReappro(ref, color, size) {
   const baseRef = toBaseRef(ref);
+  const colorKey = toColorKey(color);
+  const sizeKey = normSize(size);
+
   const data = await loadReappro();
 
-  // Plusieurs lignes possibles pour la même baseRef/color/size → on agrège qty et prend la date la plus proche (ou la dernière non vide)
-  const lines = data.filter(r => r.baseRef === baseRef && r.color === color && r.size === size);
-  if (!lines.length) return null;
+  // Filtre tolérant : même baseRef, même couleur normalisée, même taille normalisée
+  const matches = data.filter(
+    r => r.baseRef === baseRef && r.colorKey === colorKey && r.size === sizeKey
+  );
 
-  const totalQty = lines.reduce((sum, r) => sum + (r.quantity || 0), 0);
-  const date = lines.find(r => r.dateToRec && r.dateToRec !== "-")?.dateToRec || "-";
+  if (!matches.length) {
+    // Décommenter en dev si tu veux tracer les manqués :
+    // console.warn("[reappro] no match for", { baseRef, color, colorKey, size, sizeKey });
+    return null;
+  }
+
+  // Agrège les quantités (plusieurs lignes possibles) et prend une date non vide
+  const totalQty = matches.reduce((sum, r) => sum + (r.quantity || 0), 0);
+  const date = matches.find(r => r.dateToRec && r.dateToRec !== "-")?.dateToRec || "-";
 
   return { dateToRec: date, quantity: totalQty };
 }
