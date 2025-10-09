@@ -4,7 +4,7 @@ import fetch from "node-fetch";
 export default async function handler(req, res) {
   try {
     const external = await fetch(
-      "https://files.karibanbrands.com/documents/IDEAL_BASIC_BRANDS_STOCKWEB_IBB.csv" 
+      "https://files.karibanbrands.com/documents/IDEAL_BASIC_BRAND_STOCKWEB_IBB.csv" 
       // 
     );
     const text = await external.text();
