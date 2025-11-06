@@ -1,5 +1,5 @@
 # .github/workflows/update-stock-csv.yml
-name: Mise à jour quotidienne du CSV REAPRO Web IBB
+name: Mise à jour quotidienne du CSV REAPRO Web iDeal Basic Brand
 
 on:
   schedule:
