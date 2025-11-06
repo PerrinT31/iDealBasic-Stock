@@ -1,5 +1,5 @@
 # .github/workflows/update-stock-csv.yml
-name: Mise à jour quotidienne du CSV Stock Web iDeal Basic
+name: Mise à jour quotidienne du CSV Stock Web iDeal Basic Brand
 
 on:
   schedule:
