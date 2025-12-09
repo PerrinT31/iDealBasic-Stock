@@ -27,7 +27,7 @@ jobs:
       # 3) Télécharger le nouveau CSV iDeal Basic
       - name: Télécharger le CSV IDEAL_BASIC_BRANDS_STOCKWEB_IBB
         run: |
-          curl -fsSL "https://files.karibanbrands.com/documents/IDEAL_BASIC_BRANDS_STOCKWEB_NS.csv" \
+          curl -fsSL "https://files.karibanbrands.com/documents/IDEAL_BASIC_BRANDS_STOCKWEB_IBB.csv" \
             -o public/IDEAL_BASIC_BRANDS_STOCKWEB_IBB.csv
           # ⚠️ Remplacer l’URL par la vraie quand tu me la donnes
 
