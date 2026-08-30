@@ -24,7 +24,7 @@ IB200C;Men's basic polyester polo shirt;Ideal Red;M;96885;96891;1097;0;IB200C_96
 IB200C;Men's basic polyester polo shirt;Ideal Royal Blue;M;96887;96891;1460;0;IB200C_96887_96891
 IB200C;Men's basic polyester polo shirt;Ideal Atoll Blue;L;96878;96893;330;0;IB200C_96878_96893
 IB200C;Men's basic polyester polo shirt;Ideal Black;L;96881;96893;2872;0;IB200C_96881_96893
-IB200C;Men's basic polyester polo shirt;Ideal Navy;L;96883;96893;2786;0;IB200C_96883_96893
+IB200C;Men's basic polyester polo shirt;Ideal Navy;L;96883;96893;2785;0;IB200C_96883_96893
 IB200C;Men's basic polyester polo shirt;Ideal Red;L;96885;96893;1348;0;IB200C_96885_96893
 IB200C;Men's basic polyester polo shirt;Ideal Royal Blue;L;96887;96893;1624;0;IB200C_96887_96893
 IB200C;Men's basic polyester polo shirt;Ideal Atoll Blue;XL;96878;96895;164;0;IB200C_96878_96895
@@ -194,7 +194,7 @@ IB220X;Men's pique polo shirt;Ideal White;5XL;94355;94330;0;0;IB220X_94355_94330
 IB221;Ladies' pique polo shirt;Ideal White;XS;94399;94358;216;0;IB221_94399_94358
 IB221;Ladies' pique polo shirt;Ideal White;S;94399;94359;1109;0;IB221_94399_94359
 IB221;Ladies' pique polo shirt;Ideal White;M;94399;94364;1691;0;IB221_94399_94364
-IB221;Ladies' pique polo shirt;Ideal White;L;94399;94367;1257;0;IB221_94399_94367
+IB221;Ladies' pique polo shirt;Ideal White;L;94399;94367;1207;0;IB221_94399_94367
 IB221;Ladies' pique polo shirt;Ideal White;XL;94399;94368;505;0;IB221_94399_94368
 IB221A;Ladies' pique polo shirt;Ideal Oxford Grey;XS;94390;94357;6;0;IB221A_94390_94357
 IB221A;Ladies' pique polo shirt;Ideal Oxford Grey;S;94390;94361;248;0;IB221A_94390_94361
@@ -710,7 +710,7 @@ IB296C;Ladies' pique polo shirt;Ideal Sand;M;94657;94622;0;0;IB296C_94657_94622
 IB296C;Ladies' pique polo shirt;Ideal Atoll Blue;L;94637;94626;161;0;IB296C_94637_94626
 IB296C;Ladies' pique polo shirt;Ideal Black;L;94640;94626;310;0;IB296C_94640_94626
 IB296C;Ladies' pique polo shirt;Ideal Dark Grey;L;94641;94626;354;0;IB296C_94641_94626
-IB296C;Ladies' pique polo shirt;Ideal Fuchsia;L;94644;94626;185;0;IB296C_94644_94626
+IB296C;Ladies' pique polo shirt;Ideal Fuchsia;L;94644;94626;184;0;IB296C_94644_94626
 IB296C;Ladies' pique polo shirt;Ideal Navy;L;94645;94626;201;0;IB296C_94645_94626
 IB296C;Ladies' pique polo shirt;Ideal Orange;L;94648;94626;227;0;IB296C_94648_94626
 IB296C;Ladies' pique polo shirt;Ideal Red;L;94653;94626;255;0;IB296C_94653_94626
@@ -820,7 +820,7 @@ IB297C;Kids' pique polo shirt;Ideal Red;12/14 years (12/14 ans);94687;94677;306;
 IB297C;Kids' pique polo shirt;Ideal Royal Blue;12/14 years (12/14 ans);94688;94677;209;0;IB297C_94688_94677
 IB297C;Kids' pique polo shirt;Ideal Sky Blue;12/14 years (12/14 ans);94689;94677;158;0;IB297C_94689_94677
 IB300;Mercury men's polyester t-shirt;Ideal Atoll Blue;XS;94707;94691;0;0;IB300_94707_94691
-IB300;Mercury men's polyester t-shirt;Ideal Black;XS;94708;94691;937;0;IB300_94708_94691
+IB300;Mercury men's polyester t-shirt;Ideal Black;XS;94708;94691;936;0;IB300_94708_94691
 IB300;Mercury men's polyester t-shirt;Ideal Fuchsia;XS;94711;94691;995;0;IB300_94711_94691
 IB300;Mercury men's polyester t-shirt;Ideal Gold;XS;94712;94691;0;0;IB300_94712_94691
 IB300;Mercury men's polyester t-shirt;Ideal Kelly Green;XS;94713;94691;0;0;IB300_94713_94691
@@ -831,7 +831,7 @@ IB300;Mercury men's polyester t-shirt;Ideal Red;XS;94717;94691;0;0;IB300_94717_9
 IB300;Mercury men's polyester t-shirt;Ideal Royal Blue;XS;94718;94691;0;0;IB300_94718_94691
 IB300;Mercury men's polyester t-shirt;Ideal White;XS;94719;94691;0;0;IB300_94719_94691
 IB300;Mercury men's polyester t-shirt;Ideal Atoll Blue;S;94707;94694;0;0;IB300_94707_94694
-IB300;Mercury men's polyester t-shirt;Ideal Black;S;94708;94694;6266;0;IB300_94708_94694
+IB300;Mercury men's polyester t-shirt;Ideal Black;S;94708;94694;6265;0;IB300_94708_94694
 IB300;Mercury men's polyester t-shirt;Ideal Fuchsia;S;94711;94694;10693;0;IB300_94711_94694
 IB300;Mercury men's polyester t-shirt;Ideal Gold;S;94712;94694;688;0;IB300_94712_94694
 IB300;Mercury men's polyester t-shirt;Ideal Kelly Green;S;94713;94694;0;0;IB300_94713_94694
@@ -842,7 +842,7 @@ IB300;Mercury men's polyester t-shirt;Ideal Red;S;94717;94694;1311;0;IB300_94717
 IB300;Mercury men's polyester t-shirt;Ideal Royal Blue;S;94718;94694;0;0;IB300_94718_94694
 IB300;Mercury men's polyester t-shirt;Ideal White;S;94719;94694;2044;0;IB300_94719_94694
 IB300;Mercury men's polyester t-shirt;Ideal Atoll Blue;M;94707;94695;382;0;IB300_94707_94695
-IB300;Mercury men's polyester t-shirt;Ideal Black;M;94708;94695;17912;0;IB300_94708_94695
+IB300;Mercury men's polyester t-shirt;Ideal Black;M;94708;94695;17911;0;IB300_94708_94695
 IB300;Mercury men's polyester t-shirt;Ideal Fuchsia;M;94711;94695;23054;0;IB300_94711_94695
 IB300;Mercury men's polyester t-shirt;Ideal Gold;M;94712;94695;2542;0;IB300_94712_94695
 IB300;Mercury men's polyester t-shirt;Ideal Kelly Green;M;94713;94695;104;0;IB300_94713_94695
@@ -853,7 +853,7 @@ IB300;Mercury men's polyester t-shirt;Ideal Red;M;94717;94695;6251;0;IB300_94717
 IB300;Mercury men's polyester t-shirt;Ideal Royal Blue;M;94718;94695;1267;0;IB300_94718_94695
 IB300;Mercury men's polyester t-shirt;Ideal White;M;94719;94695;11036;0;IB300_94719_94695
 IB300;Mercury men's polyester t-shirt;Ideal Atoll Blue;L;94707;94698;129;0;IB300_94707_94698
-IB300;Mercury men's polyester t-shirt;Ideal Black;L;94708;94698;17786;0;IB300_94708_94698
+IB300;Mercury men's polyester t-shirt;Ideal Black;L;94708;94698;17785;0;IB300_94708_94698
 IB300;Mercury men's polyester t-shirt;Ideal Fuchsia;L;94711;94698;20919;0;IB300_94711_94698
 IB300;Mercury men's polyester t-shirt;Ideal Gold;L;94712;94698;2698;0;IB300_94712_94698
 IB300;Mercury men's polyester t-shirt;Ideal Kelly Green;L;94713;94698;31;0;IB300_94713_94698
@@ -861,10 +861,10 @@ IB300;Mercury men's polyester t-shirt;Ideal Lime;L;94714;94698;2508;0;IB300_9471
 IB300;Mercury men's polyester t-shirt;Ideal Navy;L;94715;94698;8893;0;IB300_94715_94698
 IB300;Mercury men's polyester t-shirt;Ideal Olive;L;94716;94698;7226;0;IB300_94716_94698
 IB300;Mercury men's polyester t-shirt;Ideal Red;L;94717;94698;6335;0;IB300_94717_94698
-IB300;Mercury men's polyester t-shirt;Ideal Royal Blue;L;94718;94698;1680;0;IB300_94718_94698
+IB300;Mercury men's polyester t-shirt;Ideal Royal Blue;L;94718;94698;1679;0;IB300_94718_94698
 IB300;Mercury men's polyester t-shirt;Ideal White;L;94719;94698;11308;0;IB300_94719_94698
 IB300;Mercury men's polyester t-shirt;Ideal Atoll Blue;XL;94707;94699;0;0;IB300_94707_94699
-IB300;Mercury men's polyester t-shirt;Ideal Black;XL;94708;94699;9122;0;IB300_94708_94699
+IB300;Mercury men's polyester t-shirt;Ideal Black;XL;94708;94699;9121;0;IB300_94708_94699
 IB300;Mercury men's polyester t-shirt;Ideal Fuchsia;XL;94711;94699;12085;0;IB300_94711_94699
 IB300;Mercury men's polyester t-shirt;Ideal Gold;XL;94712;94699;1846;0;IB300_94712_94699
 IB300;Mercury men's polyester t-shirt;Ideal Kelly Green;XL;94713;94699;0;0;IB300_94713_94699
@@ -875,7 +875,7 @@ IB300;Mercury men's polyester t-shirt;Ideal Red;XL;94717;94699;3770;0;IB300_9471
 IB300;Mercury men's polyester t-shirt;Ideal Royal Blue;XL;94718;94699;955;0;IB300_94718_94699
 IB300;Mercury men's polyester t-shirt;Ideal White;XL;94719;94699;6563;0;IB300_94719_94699
 IB300;Mercury men's polyester t-shirt;Ideal Atoll Blue;XXL;94707;94702;0;0;IB300_94707_94702
-IB300;Mercury men's polyester t-shirt;Ideal Black;XXL;94708;94702;2307;0;IB300_94708_94702
+IB300;Mercury men's polyester t-shirt;Ideal Black;XXL;94708;94702;2306;0;IB300_94708_94702
 IB300;Mercury men's polyester t-shirt;Ideal Fuchsia;XXL;94711;94702;3299;0;IB300_94711_94702
 IB300;Mercury men's polyester t-shirt;Ideal Gold;XXL;94712;94702;0;0;IB300_94712_94702
 IB300;Mercury men's polyester t-shirt;Ideal Kelly Green;XXL;94713;94702;0;0;IB300_94713_94702
@@ -965,25 +965,25 @@ IB301;Mercury ladies' polyester t-shirt;Ideal Navy;XXL;94729;94725;51;0;IB301_94
 IB301;Mercury ladies' polyester t-shirt;Ideal Red;XXL;94730;94725;78;0;IB301_94730_94725
 IB301;Mercury ladies' polyester t-shirt;Ideal Royal Blue;XXL;94731;94725;0;0;IB301_94731_94725
 IB301;Mercury ladies' polyester t-shirt;Ideal White;XXL;94732;94725;303;0;IB301_94732_94725
-IB302;Mercury Kids' polyester t-shirt;Ideal Black;6/8 years (6/8 ans);94737;94733;1086;0;IB302_94737_94733
+IB302;Mercury Kids' polyester t-shirt;Ideal Black;6/8 years (6/8 ans);94737;94733;1085;0;IB302_94737_94733
 IB302;Mercury Kids' polyester t-shirt;Ideal Lime;6/8 years (6/8 ans);94738;94733;464;0;IB302_94738_94733
 IB302;Mercury Kids' polyester t-shirt;Ideal Navy;6/8 years (6/8 ans);94739;94733;650;0;IB302_94739_94733
 IB302;Mercury Kids' polyester t-shirt;Ideal Red;6/8 years (6/8 ans);94740;94733;362;0;IB302_94740_94733
 IB302;Mercury Kids' polyester t-shirt;Ideal Royal Blue;6/8 years (6/8 ans);94741;94733;417;0;IB302_94741_94733
 IB302;Mercury Kids' polyester t-shirt;Ideal White;6/8 years (6/8 ans);94742;94733;767;0;IB302_94742_94733
-IB302;Mercury Kids' polyester t-shirt;Ideal Black;8/10 years (8/10 ans);94737;94734;1678;0;IB302_94737_94734
+IB302;Mercury Kids' polyester t-shirt;Ideal Black;8/10 years (8/10 ans);94737;94734;1677;0;IB302_94737_94734
 IB302;Mercury Kids' polyester t-shirt;Ideal Lime;8/10 years (8/10 ans);94738;94734;924;0;IB302_94738_94734
 IB302;Mercury Kids' polyester t-shirt;Ideal Navy;8/10 years (8/10 ans);94739;94734;998;0;IB302_94739_94734
 IB302;Mercury Kids' polyester t-shirt;Ideal Red;8/10 years (8/10 ans);94740;94734;794;0;IB302_94740_94734
 IB302;Mercury Kids' polyester t-shirt;Ideal Royal Blue;8/10 years (8/10 ans);94741;94734;170;0;IB302_94741_94734
 IB302;Mercury Kids' polyester t-shirt;Ideal White;8/10 years (8/10 ans);94742;94734;1428;0;IB302_94742_94734
-IB302;Mercury Kids' polyester t-shirt;Ideal Black;10/12 years (10/12 ans);94737;94735;2320;0;IB302_94737_94735
+IB302;Mercury Kids' polyester t-shirt;Ideal Black;10/12 years (10/12 ans);94737;94735;2319;0;IB302_94737_94735
 IB302;Mercury Kids' polyester t-shirt;Ideal Lime;10/12 years (10/12 ans);94738;94735;916;0;IB302_94738_94735
 IB302;Mercury Kids' polyester t-shirt;Ideal Navy;10/12 years (10/12 ans);94739;94735;1445;0;IB302_94739_94735
 IB302;Mercury Kids' polyester t-shirt;Ideal Red;10/12 years (10/12 ans);94740;94735;1039;0;IB302_94740_94735
 IB302;Mercury Kids' polyester t-shirt;Ideal Royal Blue;10/12 years (10/12 ans);94741;94735;0;0;IB302_94741_94735
 IB302;Mercury Kids' polyester t-shirt;Ideal White;10/12 years (10/12 ans);94742;94735;1396;0;IB302_94742_94735
-IB302;Mercury Kids' polyester t-shirt;Ideal Black;12/14 years (12/14 ans);94737;94736;1258;0;IB302_94737_94736
+IB302;Mercury Kids' polyester t-shirt;Ideal Black;12/14 years (12/14 ans);94737;94736;1257;0;IB302_94737_94736
 IB302;Mercury Kids' polyester t-shirt;Ideal Lime;12/14 years (12/14 ans);94738;94736;271;0;IB302_94738_94736
 IB302;Mercury Kids' polyester t-shirt;Ideal Navy;12/14 years (12/14 ans);94739;94736;1045;0;IB302_94739_94736
 IB302;Mercury Kids' polyester t-shirt;Ideal Red;12/14 years (12/14 ans);94740;94736;342;0;IB302_94740_94736
@@ -1035,7 +1035,7 @@ IB310C;iDeal150 Men's tubular t-shirt;Ideal Royal Blue;XS;94800;94744;0;0;IB310C
 IB310C;iDeal150 Men's tubular t-shirt;Ideal Sand;XS;94803;94744;114;0;IB310C_94803_94744
 IB310C;iDeal150 Men's tubular t-shirt;Ideal Sky Blue;XS;94805;94744;136;0;IB310C_94805_94744
 IB310C;iDeal150 Men's tubular t-shirt;Ideal Urban Khaki;XS;94807;94744;792;0;IB310C_94807_94744
-IB310C;iDeal150 Men's tubular t-shirt;Ideal Atoll Blue;S;94773;94748;114;0;IB310C_94773_94748
+IB310C;iDeal150 Men's tubular t-shirt;Ideal Atoll Blue;S;94773;94748;105;0;IB310C_94773_94748
 IB310C;iDeal150 Men's tubular t-shirt;Ideal Black;S;94774;94748;15703;0;IB310C_94774_94748
 IB310C;iDeal150 Men's tubular t-shirt;Ideal Burgundy;S;94777;94748;298;0;IB310C_94777_94748
 IB310C;iDeal150 Men's tubular t-shirt;Ideal Dark Grey;S;94778;94748;2765;0;IB310C_94778_94748
@@ -1051,7 +1051,7 @@ IB310C;iDeal150 Men's tubular t-shirt;Ideal Royal Blue;S;94800;94748;5064;0;IB31
 IB310C;iDeal150 Men's tubular t-shirt;Ideal Sand;S;94803;94748;73;0;IB310C_94803_94748
 IB310C;iDeal150 Men's tubular t-shirt;Ideal Sky Blue;S;94805;94748;74;0;IB310C_94805_94748
 IB310C;iDeal150 Men's tubular t-shirt;Ideal Urban Khaki;S;94807;94748;4590;0;IB310C_94807_94748
-IB310C;iDeal150 Men's tubular t-shirt;Ideal Atoll Blue;M;94773;94750;950;0;IB310C_94773_94750
+IB310C;iDeal150 Men's tubular t-shirt;Ideal Atoll Blue;M;94773;94750;935;0;IB310C_94773_94750
 IB310C;iDeal150 Men's tubular t-shirt;Ideal Black;M;94774;94750;52317;0;IB310C_94774_94750
 IB310C;iDeal150 Men's tubular t-shirt;Ideal Burgundy;M;94777;94750;2578;0;IB310C_94777_94750
 IB310C;iDeal150 Men's tubular t-shirt;Ideal Dark Grey;M;94778;94750;6456;0;IB310C_94778_94750
@@ -1067,10 +1067,10 @@ IB310C;iDeal150 Men's tubular t-shirt;Ideal Royal Blue;M;94800;94750;4962;0;IB31
 IB310C;iDeal150 Men's tubular t-shirt;Ideal Sand;M;94803;94750;995;0;IB310C_94803_94750
 IB310C;iDeal150 Men's tubular t-shirt;Ideal Sky Blue;M;94805;94750;916;0;IB310C_94805_94750
 IB310C;iDeal150 Men's tubular t-shirt;Ideal Urban Khaki;M;94807;94750;14481;0;IB310C_94807_94750
-IB310C;iDeal150 Men's tubular t-shirt;Ideal Atoll Blue;L;94773;94754;1201;0;IB310C_94773_94754
+IB310C;iDeal150 Men's tubular t-shirt;Ideal Atoll Blue;L;94773;94754;1185;0;IB310C_94773_94754
 IB310C;iDeal150 Men's tubular t-shirt;Ideal Black;L;94774;94754;50177;0;IB310C_94774_94754
 IB310C;iDeal150 Men's tubular t-shirt;Ideal Burgundy;L;94777;94754;2940;0;IB310C_94777_94754
-IB310C;iDeal150 Men's tubular t-shirt;Ideal Dark Grey;L;94778;94754;6487;0;IB310C_94778_94754
+IB310C;iDeal150 Men's tubular t-shirt;Ideal Dark Grey;L;94778;94754;6467;0;IB310C_94778_94754
 IB310C;iDeal150 Men's tubular t-shirt;Ideal Forest Green;L;94781;94754;700;0;IB310C_94781_94754
 IB310C;iDeal150 Men's tubular t-shirt;Ideal Fuchsia;L;94783;94754;14810;0;IB310C_94783_94754
 IB310C;iDeal150 Men's tubular t-shirt;Ideal Gold;L;94784;94754;1722;0;IB310C_94784_94754
@@ -1083,7 +1083,7 @@ IB310C;iDeal150 Men's tubular t-shirt;Ideal Royal Blue;L;94800;94754;11989;0;IB3
 IB310C;iDeal150 Men's tubular t-shirt;Ideal Sand;L;94803;94754;941;0;IB310C_94803_94754
 IB310C;iDeal150 Men's tubular t-shirt;Ideal Sky Blue;L;94805;94754;387;0;IB310C_94805_94754
 IB310C;iDeal150 Men's tubular t-shirt;Ideal Urban Khaki;L;94807;94754;14614;0;IB310C_94807_94754
-IB310C;iDeal150 Men's tubular t-shirt;Ideal Atoll Blue;XL;94773;94756;1066;0;IB310C_94773_94756
+IB310C;iDeal150 Men's tubular t-shirt;Ideal Atoll Blue;XL;94773;94756;1048;0;IB310C_94773_94756
 IB310C;iDeal150 Men's tubular t-shirt;Ideal Black;XL;94774;94756;35589;0;IB310C_94774_94756
 IB310C;iDeal150 Men's tubular t-shirt;Ideal Burgundy;XL;94777;94756;1871;0;IB310C_94777_94756
 IB310C;iDeal150 Men's tubular t-shirt;Ideal Dark Grey;XL;94778;94756;5878;0;IB310C_94778_94756
@@ -1099,7 +1099,7 @@ IB310C;iDeal150 Men's tubular t-shirt;Ideal Royal Blue;XL;94800;94756;4078;0;IB3
 IB310C;iDeal150 Men's tubular t-shirt;Ideal Sand;XL;94803;94756;432;0;IB310C_94803_94756
 IB310C;iDeal150 Men's tubular t-shirt;Ideal Sky Blue;XL;94805;94756;313;0;IB310C_94805_94756
 IB310C;iDeal150 Men's tubular t-shirt;Ideal Urban Khaki;XL;94807;94756;10623;0;IB310C_94807_94756
-IB310C;iDeal150 Men's tubular t-shirt;Ideal Atoll Blue;XXL;94773;94760;317;0;IB310C_94773_94760
+IB310C;iDeal150 Men's tubular t-shirt;Ideal Atoll Blue;XXL;94773;94760;302;0;IB310C_94773_94760
 IB310C;iDeal150 Men's tubular t-shirt;Ideal Black;XXL;94774;94760;13905;0;IB310C_94774_94760
 IB310C;iDeal150 Men's tubular t-shirt;Ideal Burgundy;XXL;94777;94760;994;0;IB310C_94777_94760
 IB310C;iDeal150 Men's tubular t-shirt;Ideal Dark Grey;XXL;94778;94760;775;0;IB310C_94778_94760
@@ -1115,7 +1115,7 @@ IB310C;iDeal150 Men's tubular t-shirt;Ideal Royal Blue;XXL;94800;94760;1777;0;IB
 IB310C;iDeal150 Men's tubular t-shirt;Ideal Sand;XXL;94803;94760;308;0;IB310C_94803_94760
 IB310C;iDeal150 Men's tubular t-shirt;Ideal Sky Blue;XXL;94805;94760;647;0;IB310C_94805_94760
 IB310C;iDeal150 Men's tubular t-shirt;Ideal Urban Khaki;XXL;94807;94760;4144;0;IB310C_94807_94760
-IB310CX;iDeal150 Men's tubular t-shirt;Ideal Atoll Blue;3XL;94772;94761;435;0;IB310CX_94772_94761
+IB310CX;iDeal150 Men's tubular t-shirt;Ideal Atoll Blue;3XL;94772;94761;420;0;IB310CX_94772_94761
 IB310CX;iDeal150 Men's tubular t-shirt;Ideal Black;3XL;94775;94761;6168;0;IB310CX_94775_94761
 IB310CX;iDeal150 Men's tubular t-shirt;Ideal Burgundy;3XL;94776;94761;477;0;IB310CX_94776_94761
 IB310CX;iDeal150 Men's tubular t-shirt;Ideal Dark Grey;3XL;94779;94761;163;0;IB310CX_94779_94761
@@ -1131,7 +1131,7 @@ IB310CX;iDeal150 Men's tubular t-shirt;Ideal Royal Blue;3XL;94801;94761;396;0;IB
 IB310CX;iDeal150 Men's tubular t-shirt;Ideal Sand;3XL;94802;94761;228;0;IB310CX_94802_94761
 IB310CX;iDeal150 Men's tubular t-shirt;Ideal Sky Blue;3XL;94804;94761;454;0;IB310CX_94804_94761
 IB310CX;iDeal150 Men's tubular t-shirt;Ideal Urban Khaki;3XL;94806;94761;1948;0;IB310CX_94806_94761
-IB310CX;iDeal150 Men's tubular t-shirt;Ideal Atoll Blue;4XL;94772;94765;375;0;IB310CX_94772_94765
+IB310CX;iDeal150 Men's tubular t-shirt;Ideal Atoll Blue;4XL;94772;94765;363;0;IB310CX_94772_94765
 IB310CX;iDeal150 Men's tubular t-shirt;Ideal Black;4XL;94775;94765;289;0;IB310CX_94775_94765
 IB310CX;iDeal150 Men's tubular t-shirt;Ideal Burgundy;4XL;94776;94765;432;0;IB310CX_94776_94765
 IB310CX;iDeal150 Men's tubular t-shirt;Ideal Dark Grey;4XL;94779;94765;254;0;IB310CX_94779_94765
@@ -1354,7 +1354,7 @@ IB312CX;iDeal150 Kids' t-shirt;Ideal Royal Blue;8/10 years (8/10 ans);94907;9487
 IB312CX;iDeal150 Kids' t-shirt;Ideal Sand;8/10 years (8/10 ans);94908;94873;949;0;IB312CX_94908_94873
 IB312CX;iDeal150 Kids' t-shirt;Ideal Atoll Blue;10/12 years (10/12 ans);94884;94877;880;0;IB312CX_94884_94877
 IB312CX;iDeal150 Kids' t-shirt;Ideal Black;10/12 years (10/12 ans);94887;94877;2942;0;IB312CX_94887_94877
-IB312CX;iDeal150 Kids' t-shirt;Ideal Dark Grey;10/12 years (10/12 ans);94888;94877;3155;0;IB312CX_94888_94877
+IB312CX;iDeal150 Kids' t-shirt;Ideal Dark Grey;10/12 years (10/12 ans);94888;94877;3150;0;IB312CX_94888_94877
 IB312CX;iDeal150 Kids' t-shirt;Ideal Forest Green;10/12 years (10/12 ans);94891;94877;378;0;IB312CX_94891_94877
 IB312CX;iDeal150 Kids' t-shirt;Ideal Fuchsia;10/12 years (10/12 ans);94892;94877;436;0;IB312CX_94892_94877
 IB312CX;iDeal150 Kids' t-shirt;Ideal Gold;10/12 years (10/12 ans);94895;94877;30;0;IB312CX_94895_94877
@@ -1366,7 +1366,7 @@ IB312CX;iDeal150 Kids' t-shirt;Ideal Royal Blue;10/12 years (10/12 ans);94907;94
 IB312CX;iDeal150 Kids' t-shirt;Ideal Sand;10/12 years (10/12 ans);94908;94877;630;0;IB312CX_94908_94877
 IB312CX;iDeal150 Kids' t-shirt;Ideal Atoll Blue;12/14 years (12/14 ans);94884;94879;578;0;IB312CX_94884_94879
 IB312CX;iDeal150 Kids' t-shirt;Ideal Black;12/14 years (12/14 ans);94887;94879;2982;0;IB312CX_94887_94879
-IB312CX;iDeal150 Kids' t-shirt;Ideal Dark Grey;12/14 years (12/14 ans);94888;94879;1213;0;IB312CX_94888_94879
+IB312CX;iDeal150 Kids' t-shirt;Ideal Dark Grey;12/14 years (12/14 ans);94888;94879;1208;0;IB312CX_94888_94879
 IB312CX;iDeal150 Kids' t-shirt;Ideal Forest Green;12/14 years (12/14 ans);94891;94879;798;0;IB312CX_94891_94879
 IB312CX;iDeal150 Kids' t-shirt;Ideal Fuchsia;12/14 years (12/14 ans);94892;94879;328;0;IB312CX_94892_94879
 IB312CX;iDeal150 Kids' t-shirt;Ideal Gold;12/14 years (12/14 ans);94895;94879;35;0;IB312CX_94895_94879
@@ -1641,7 +1641,7 @@ IB320AX;iDeal190 Men's tubular t-shirt;Ideal Oxford Grey;4XL;95090;95062;205;0;I
 IB320AX;iDeal190 Men's tubular t-shirt;Ideal Ash Heather;5XL;95069;95067;283;0;IB320AX_95069_95067
 IB320AX;iDeal190 Men's tubular t-shirt;Ideal Oxford Grey;5XL;95090;95067;231;0;IB320AX_95090_95067
 IB320C;iDeal190 Men's tubular t-shirt;Ideal Atoll Blue;XS;95071;95042;475;0;IB320C_95071_95042
-IB320C;iDeal190 Men's tubular t-shirt;Ideal Black;XS;95072;95042;3692;0;IB320C_95072_95042
+IB320C;iDeal190 Men's tubular t-shirt;Ideal Black;XS;95072;95042;3691;0;IB320C_95072_95042
 IB320C;iDeal190 Men's tubular t-shirt;Ideal Burgundy;XS;95075;95042;1374;0;IB320C_95075_95042
 IB320C;iDeal190 Men's tubular t-shirt;Ideal Dark Grey;XS;95076;95042;464;0;IB320C_95076_95042
 IB320C;iDeal190 Men's tubular t-shirt;Ideal Forest Green;XS;95079;95042;682;0;IB320C_95079_95042
@@ -1657,7 +1657,7 @@ IB320C;iDeal190 Men's tubular t-shirt;Ideal Sand;XS;95101;95042;371;0;IB320C_951
 IB320C;iDeal190 Men's tubular t-shirt;Ideal Sky Blue;XS;95103;95042;518;0;IB320C_95103_95042
 IB320C;iDeal190 Men's tubular t-shirt;Ideal Urban Khaki;XS;95105;95042;490;0;IB320C_95105_95042
 IB320C;iDeal190 Men's tubular t-shirt;Ideal Atoll Blue;S;95071;95046;363;0;IB320C_95071_95046
-IB320C;iDeal190 Men's tubular t-shirt;Ideal Black;S;95072;95046;24127;0;IB320C_95072_95046
+IB320C;iDeal190 Men's tubular t-shirt;Ideal Black;S;95072;95046;24123;0;IB320C_95072_95046
 IB320C;iDeal190 Men's tubular t-shirt;Ideal Burgundy;S;95075;95046;2932;0;IB320C_95075_95046
 IB320C;iDeal190 Men's tubular t-shirt;Ideal Dark Grey;S;95076;95046;1723;0;IB320C_95076_95046
 IB320C;iDeal190 Men's tubular t-shirt;Ideal Forest Green;S;95079;95046;2194;0;IB320C_95079_95046
@@ -1673,7 +1673,7 @@ IB320C;iDeal190 Men's tubular t-shirt;Ideal Sand;S;95101;95046;0;0;IB320C_95101_
 IB320C;iDeal190 Men's tubular t-shirt;Ideal Sky Blue;S;95103;95046;364;0;IB320C_95103_95046
 IB320C;iDeal190 Men's tubular t-shirt;Ideal Urban Khaki;S;95105;95046;753;0;IB320C_95105_95046
 IB320C;iDeal190 Men's tubular t-shirt;Ideal Atoll Blue;M;95071;95048;2901;0;IB320C_95071_95048
-IB320C;iDeal190 Men's tubular t-shirt;Ideal Black;M;95072;95048;60996;0;IB320C_95072_95048
+IB320C;iDeal190 Men's tubular t-shirt;Ideal Black;M;95072;95048;60992;0;IB320C_95072_95048
 IB320C;iDeal190 Men's tubular t-shirt;Ideal Burgundy;M;95075;95048;4732;0;IB320C_95075_95048
 IB320C;iDeal190 Men's tubular t-shirt;Ideal Dark Grey;M;95076;95048;5146;0;IB320C_95076_95048
 IB320C;iDeal190 Men's tubular t-shirt;Ideal Forest Green;M;95079;95048;3281;0;IB320C_95079_95048
@@ -1689,7 +1689,7 @@ IB320C;iDeal190 Men's tubular t-shirt;Ideal Sand;M;95101;95048;1209;0;IB320C_951
 IB320C;iDeal190 Men's tubular t-shirt;Ideal Sky Blue;M;95103;95048;2812;0;IB320C_95103_95048
 IB320C;iDeal190 Men's tubular t-shirt;Ideal Urban Khaki;M;95105;95048;2569;0;IB320C_95105_95048
 IB320C;iDeal190 Men's tubular t-shirt;Ideal Atoll Blue;L;95071;95052;4089;0;IB320C_95071_95052
-IB320C;iDeal190 Men's tubular t-shirt;Ideal Black;L;95072;95052;71321;0;IB320C_95072_95052
+IB320C;iDeal190 Men's tubular t-shirt;Ideal Black;L;95072;95052;71320;0;IB320C_95072_95052
 IB320C;iDeal190 Men's tubular t-shirt;Ideal Burgundy;L;95075;95052;5221;0;IB320C_95075_95052
 IB320C;iDeal190 Men's tubular t-shirt;Ideal Dark Grey;L;95076;95052;6834;0;IB320C_95076_95052
 IB320C;iDeal190 Men's tubular t-shirt;Ideal Forest Green;L;95079;95052;9920;0;IB320C_95079_95052
@@ -1923,7 +1923,7 @@ IB322C;iDeal190 Kids' t-shirt;Ideal Kelly Green;1/2 years (1/2 ans);95195;95160;
 IB322C;iDeal190 Kids' t-shirt;Ideal Navy;1/2 years (1/2 ans);95196;95160;125;0;IB322C_95196_95160
 IB322C;iDeal190 Kids' t-shirt;Ideal Orange;1/2 years (1/2 ans);95199;95160;16;0;IB322C_95199_95160
 IB322C;iDeal190 Kids' t-shirt;Ideal Red;1/2 years (1/2 ans);95203;95160;56;0;IB322C_95203_95160
-IB322C;iDeal190 Kids' t-shirt;Ideal Royal Blue;1/2 years (1/2 ans);95204;95160;72;0;IB322C_95204_95160
+IB322C;iDeal190 Kids' t-shirt;Ideal Royal Blue;1/2 years (1/2 ans);95204;95160;71;0;IB322C_95204_95160
 IB322C;iDeal190 Kids' t-shirt;Ideal Sand;1/2 years (1/2 ans);95207;95160;0;0;IB322C_95207_95160
 IB322C;iDeal190 Kids' t-shirt;Ideal Atoll Blue;2/4 years (2/4 ans);95183;95164;216;0;IB322C_95183_95164
 IB322C;iDeal190 Kids' t-shirt;Ideal Black;2/4 years (2/4 ans);95184;95164;535;0;IB322C_95184_95164
@@ -2184,7 +2184,7 @@ IB400C;Unisex basic round neck tubular sweatshirt;Ideal Forest Green;L;95297;952
 IB400C;Unisex basic round neck tubular sweatshirt;Ideal Navy;L;95300;95278;2818;0;IB400C_95300_95278
 IB400C;Unisex basic round neck tubular sweatshirt;Ideal Orange;L;95302;95278;2236;0;IB400C_95302_95278
 IB400C;Unisex basic round neck tubular sweatshirt;Ideal Red;L;95305;95278;1108;0;IB400C_95305_95278
-IB400C;Unisex basic round neck tubular sweatshirt;Ideal Royal Blue;L;95308;95278;1814;0;IB400C_95308_95278
+IB400C;Unisex basic round neck tubular sweatshirt;Ideal Royal Blue;L;95308;95278;1813;0;IB400C_95308_95278
 IB400C;Unisex basic round neck tubular sweatshirt;Ideal Black;XL;95293;95280;1927;0;IB400C_95293_95280
 IB400C;Unisex basic round neck tubular sweatshirt;Ideal Dark Grey;XL;95296;95280;7;0;IB400C_95296_95280
 IB400C;Unisex basic round neck tubular sweatshirt;Ideal Forest Green;XL;95297;95280;255;0;IB400C_95297_95280
@@ -2647,25 +2647,25 @@ IB900;Unisex basic polar fleece;Ideal Forest Green;S;95504;95494;430;0;IB900_955
 IB900;Unisex basic polar fleece;Ideal Navy;S;95505;95494;2330;0;IB900_95505_95494
 IB900;Unisex basic polar fleece;Ideal Red;S;95506;95494;492;0;IB900_95506_95494
 IB900;Unisex basic polar fleece;Ideal Royal Blue;S;95507;95494;456;0;IB900_95507_95494
-IB900;Unisex basic polar fleece;Ideal Black;M;95502;95495;7261;0;IB900_95502_95495
+IB900;Unisex basic polar fleece;Ideal Black;M;95502;95495;7259;0;IB900_95502_95495
 IB900;Unisex basic polar fleece;Ideal Dark Grey;M;95503;95495;1572;0;IB900_95503_95495
 IB900;Unisex basic polar fleece;Ideal Forest Green;M;95504;95495;997;0;IB900_95504_95495
 IB900;Unisex basic polar fleece;Ideal Navy;M;95505;95495;4723;0;IB900_95505_95495
 IB900;Unisex basic polar fleece;Ideal Red;M;95506;95495;1058;0;IB900_95506_95495
 IB900;Unisex basic polar fleece;Ideal Royal Blue;M;95507;95495;1433;0;IB900_95507_95495
-IB900;Unisex basic polar fleece;Ideal Black;L;95502;95496;6570;0;IB900_95502_95496
+IB900;Unisex basic polar fleece;Ideal Black;L;95502;95496;6566;0;IB900_95502_95496
 IB900;Unisex basic polar fleece;Ideal Dark Grey;L;95503;95496;1662;0;IB900_95503_95496
 IB900;Unisex basic polar fleece;Ideal Forest Green;L;95504;95496;1206;0;IB900_95504_95496
 IB900;Unisex basic polar fleece;Ideal Navy;L;95505;95496;4857;0;IB900_95505_95496
 IB900;Unisex basic polar fleece;Ideal Red;L;95506;95496;540;0;IB900_95506_95496
 IB900;Unisex basic polar fleece;Ideal Royal Blue;L;95507;95496;2126;0;IB900_95507_95496
-IB900;Unisex basic polar fleece;Ideal Black;XL;95502;95497;4739;0;IB900_95502_95497
+IB900;Unisex basic polar fleece;Ideal Black;XL;95502;95497;4731;0;IB900_95502_95497
 IB900;Unisex basic polar fleece;Ideal Dark Grey;XL;95503;95497;1241;0;IB900_95503_95497
 IB900;Unisex basic polar fleece;Ideal Forest Green;XL;95504;95497;529;0;IB900_95504_95497
 IB900;Unisex basic polar fleece;Ideal Navy;XL;95505;95497;2274;0;IB900_95505_95497
 IB900;Unisex basic polar fleece;Ideal Red;XL;95506;95497;705;0;IB900_95506_95497
 IB900;Unisex basic polar fleece;Ideal Royal Blue;XL;95507;95497;1112;0;IB900_95507_95497
-IB900;Unisex basic polar fleece;Ideal Black;XXL;95502;95498;1120;0;IB900_95502_95498
+IB900;Unisex basic polar fleece;Ideal Black;XXL;95502;95498;1117;0;IB900_95502_95498
 IB900;Unisex basic polar fleece;Ideal Dark Grey;XXL;95503;95498;521;0;IB900_95503_95498
 IB900;Unisex basic polar fleece;Ideal Forest Green;XXL;95504;95498;213;0;IB900_95504_95498
 IB900;Unisex basic polar fleece;Ideal Navy;XXL;95505;95498;1104;0;IB900_95505_95498
